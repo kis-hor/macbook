@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="87F880BB-EDC6-3A4D-5F58-AC4ED710E86E" name="tbl users projects">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>D7896DDE-9FFD-16C0-E2F0-F2859ACC3AD9</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user project id" id="3BE46A9D-92A0-4FF5-DED9-29526257A726">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>21060229-D0A0-EAE8-CE70-B1565EF781B4</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project id" id="A8FB5E86-1A74-9E6A-768D-7C2590B34DB0">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>530416B3-5583-66BF-FB60-666398498DFB</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6B6DCD14-C036-7C7D-F7AA-D04136C16E87</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="9FCDA999-8479-5D2E-09DD-CF611FEEF01C">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>4D2ACCE9-9833-8845-216D-E626090B9FDC</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user id" id="537B85E1-8431-9524-1A1D-86D465A699D8">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:24:39 UTC</createdTime>
+<generatorID>9DB6833A-5249-FD20-32BE-B5BDB998C235</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>20A5C37A-AF6B-1AAC-5179-1F6F502148DA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33A3386E-CBF2-D805-98AF-BDF150166E71" name="tbl users projects PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>0F658E52-8544-168F-14DA-5FFF21936D5A</generatorID>
+<ownerDesignName>d_kiss</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BE46A9D-92A0-4FF5-DED9-29526257A726</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tbl_tasks_resources_tbl_resources_FK" directorySegmentName="seg_0" id="82888F00-2E4F-973E-347B-BB2A593F26D7">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>2828C526-98F2-FD38-0159-3BBC87029194</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<sourcePk>A8CCF6A9-A110-EC57-5E0D-AB9482C95512</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C83E0064-1F73-28C2-73E0-9BDFE8F6C303</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A92D3795-B42D-AC00-0952-863C155CACF7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

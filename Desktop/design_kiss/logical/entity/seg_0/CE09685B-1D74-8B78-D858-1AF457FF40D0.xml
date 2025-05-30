@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE09685B-1D74-8B78-D858-1AF457FF40D0" name="tbl users subtasks">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>07AA1FF7-A415-FEB3-001C-053835E8CF4C</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user subtask id" id="8B975A80-0291-F53A-9FEF-28ACA3DC0186">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>C5E361F8-B16F-DD60-3B25-C3EDCDC9EB93</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user id" id="6786515D-A266-CCE2-9087-A3E872DC5835">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>B8E6F12B-B39B-19AA-3FEC-CCE7AA7F84CD</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<referedAttribute>20A5C37A-AF6B-1AAC-5179-1F6F502148DA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="subtask id" id="878618A3-7636-5658-8D8B-DDDC25B81546">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>B839F2EE-A1EA-C2CE-87E3-8DA0057FE489</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<referedAttribute>CA4EC723-E4C9-F37C-A266-FEB6CC4CD6D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="343A96CF-E8D1-2512-8BC4-4A275B80F78F" name="tbl users subtasks PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-11 15:20:39 UTC</createdTime>
+<generatorID>DECAE722-870D-DF06-E39A-C9183FC0DBAB</generatorID>
+<ownerDesignName>design_kiss</ownerDesignName>
+<engineerTo>
+<item key="6051BCE4-AA3D-6566-90A0-484DDBFD02CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8B975A80-0291-F53A-9FEF-28ACA3DC0186</attributeRef>
+<attributeRef>6786515D-A266-CCE2-9087-A3E872DC5835</attributeRef>
+<attributeRef>878618A3-7636-5658-8D8B-DDDC25B81546</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

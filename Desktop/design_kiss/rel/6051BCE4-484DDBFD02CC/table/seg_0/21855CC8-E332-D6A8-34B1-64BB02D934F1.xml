@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21855CC8-E332-D6A8-34B1-64BB02D934F1" name="tbl_users_tasks">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:19:04 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_task_id" id="94188EFE-0374-B827-FFC4-84EC72A8D0A2">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:20:48 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tbl_users_user_id" id="6661B3E3-2AEF-260E-1445-C1DF44F14484">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:20:48 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E4EFA88-8CF1-E1C0-9FF6-3D9A5CE018F7" referredColumn="520AA64A-C041-4ADA-BC31-3CBCB9D31EC4"/>
+</associations>
+</Column>
+<Column name="tbl_tasks_task_id" id="BDC8E0A8-B795-243E-4A96-A2452375CE07">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:20:48 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F51CE2F-C6DF-2343-B177-46766EC883EC" referredColumn="EECCD50F-EA61-49B2-286F-1FD7CA2E1CAC"/>
+</associations>
+</Column>
+<Column name="role" id="8FBD116D-D742-A200-D25D-19C1967C9ABA">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:20:48 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3581C026-2405-6FF4-A62C-D06B798E1DFF" name="tbl_users_tasks_PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:20:48 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94188EFE-0374-B827-FFC4-84EC72A8D0A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB107B8C-13AF-5C07-051C-82B2FCC06403" name="tbl_users_tasks_tbl_users_FK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:21:19 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6661B3E3-2AEF-260E-1445-C1DF44F14484"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B40BAC0-790E-A659-A3F1-E8A9A69C314D" name="tbl_users_tasks_tbl_tasks_FK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:21:19 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDC8E0A8-B795-243E-4A96-A2452375CE07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

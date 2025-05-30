@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A9D4DDE-6362-F4E1-F2E6-D4CC248B3883" name="tbl_subtasks">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:43:45 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="subtask_id" id="C5538BBA-C235-9CEF-37D7-F248D4F65418">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtask_name" id="D590082F-C9E5-6496-FB4B-4291C5EA071D">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="B0E752C7-94E1-DF2F-16CC-D91BE43C4803">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="due_date" id="DA444347-BE89-ED7C-777E-D3DAC156F75E">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="33ADEC41-4C9E-B85D-F07A-5CD1C4FE7A69">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="13E529A6-59E7-143D-A1FF-FF4736A022C6">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="priority" id="266D7FB8-F3BF-ECDF-BA17-7541A68C9B08">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tbl_tasks_task_id" id="8D71C686-CA1D-9B78-DF2A-64730E98CB84">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:46:42 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FEB6402-C8B6-B62F-701D-DB7085275A06" referredColumn="EECCD50F-EA61-49B2-286F-1FD7CA2E1CAC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BA26448-9FBA-44C0-DA92-F24F5620C4E6" name="tbl_subtasks_PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:05:14 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5538BBA-C235-9CEF-37D7-F248D4F65418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16B6FF9B-E8B5-5C82-B5FB-E65EFF86219E" name="tbl_subtasks_tbl_tasks_FK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:09:16 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D71C686-CA1D-9B78-DF2A-64730E98CB84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

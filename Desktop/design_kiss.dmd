@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="design_kiss" id="EFD62A2E-4EA8-29F6-18E6-DEA46D4F9B86" version="3.5">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:31:05 UTC</createdTime>
+<ownerDesignName>designd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EFD62A2E-4EA8-29F6-18E6-DEA46D4F9B86</designId>
+</OSDM_Design>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB673F54-0AF2-9065-0A2A-43FBA3F13CE6" name="tbl_resources">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:48:33 UTC</createdTime>
+<ownerDesignName>d_kiss</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="resource_id" id="75EFEF5F-ABB2-B12F-6E0B-A5B159817132">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:50:04 UTC</createdTime>
+<ownerDesignName>d_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resource_name" id="9B0FE38F-C578-917D-D5B2-C1FE45AA79C0">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:50:04 UTC</createdTime>
+<ownerDesignName>d_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resource_type" id="28CC7792-8CE1-A8B2-8451-00A1E9483511">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:50:04 UTC</createdTime>
+<ownerDesignName>d_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44DBAEC0-2DFC-9013-A3F4-FD32D22C206B" name="tbl_resources_PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:50:04 UTC</createdTime>
+<ownerDesignName>d_kiss</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75EFEF5F-ABB2-B12F-6E0B-A5B159817132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

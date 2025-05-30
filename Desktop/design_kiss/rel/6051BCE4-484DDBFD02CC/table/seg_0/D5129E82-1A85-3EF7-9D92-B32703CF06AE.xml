@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5129E82-1A85-3EF7-9D92-B32703CF06AE" name="tbl_comments">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:51:36 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment_id" id="77A2DA62-944E-C7F9-72BA-F671CF7320F4">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:52:22 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment_text" id="58DF106F-6541-DFE7-52F8-2C398F57F252">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:52:22 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tbl_tasks_task_id" id="4CF640B7-3F4F-80C6-C65F-4252A341297E">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:03:12 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E922476F-60B1-2351-2ACC-832652DB6FD4" referredColumn="EECCD50F-EA61-49B2-286F-1FD7CA2E1CAC"/>
+</associations>
+</Column>
+<Column name="tbl_users_user_id" id="C6DE09CF-1E68-CEC7-A5E2-2E672E9BA270">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:03:12 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45ADF949-CBF6-F4D3-F0BF-3864E937C160" referredColumn="520AA64A-C041-4ADA-BC31-3CBCB9D31EC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD6B39E1-21AB-7A37-F0D3-702BEE47F075" name="tbl_comments_PK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 16:52:22 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77A2DA62-944E-C7F9-72BA-F671CF7320F4"/>
+<colUsage columnID="C6DE09CF-1E68-CEC7-A5E2-2E672E9BA270"/>
+<colUsage columnID="4CF640B7-3F4F-80C6-C65F-4252A341297E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C5F09A9-0DF1-D055-B1F5-78697DAC6AF7" name="tbl_comments_tbl_users_FK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:08:57 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6DE09CF-1E68-CEC7-A5E2-2E672E9BA270"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D4DF39C-ECEF-1483-FA84-BEC0282732AF" name="tbl_comments_tbl_tasks_FK">
+<createdBy>macbook</createdBy>
+<createdTime>2025-01-02 17:08:57 UTC</createdTime>
+<ownerDesignName>design_kiss</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CF640B7-3F4F-80C6-C65F-4252A341297E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
