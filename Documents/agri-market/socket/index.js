@@ -14,19 +14,23 @@ app.get("/", (req, res) => {
 })
 
 // Handle notification from backend
- socket.on("newMessageNotification", (data) => {
-    const receiver = getUser(data.receiverId);
-    if (receiver) {
-      io.to(receiver.socketId).emit("newMessageNotification", {
-        messageId: data.messageId,
-        conversationId: data.conversationId,
-        senderId: data.senderId,
-        text: data.text,
-        createdAt: data.createdAt
-      });
-      console.log(`Notification sent to ${data.receiverId}`);
+app.post("/notify", (req, res) => {
+  const { event, data } = req.body;
+  if (!event || !data) {
+    console.error("Invalid notify payload:", req.body);
+    return res.status(400).json({ error: "Missing event or data" });
+  }
+  if (event === "newMessageNotification") {
+    const user = getUser(data.receiverId);
+    if (user) {
+      io.to(user.socketId).emit("newMessageNotification", data);
+      console.log(`Notification emitted to ${data.receiverId} (socket: ${user.socketId})`);
+    } else {
+      console.log(`User ${data.receiverId} not connected`);
     }
-  });
+  }
+  res.status(200).json({ success: true });
+});
 
 
 let users = []
